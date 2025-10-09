@@ -73,3 +73,9 @@ let user5 = {
     greet: user1.greet
 }
 user5.greet()
+
+
+
+
+
+

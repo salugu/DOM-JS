@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex flex-col items-center justify-center rounded-lg">
+    <h1>Emojis</h1>
+    <div>
+        <ul>
+            <li>😀</li>
+            <li>😂</li>
+            <li>❤️</li>
+        </ul>
+    </div>
+    <script>
+        const emojis = document.querySelectorAll('li');
+        emojis.forEach(function(emoji){
+            emoji.addEventListener('click', function(){
+                this.style.backgroundColor = '#fde68a'; 
+                alert('you clicked on emoji ' + this.innerText);
+            });
+        });
+    </script>
+    
+</body>
+</html>
+
